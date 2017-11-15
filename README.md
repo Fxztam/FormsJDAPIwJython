@@ -1,7 +1,7 @@
 # FormsJDAPIwithJython
 
 ### FormsExtractCode
-Extracting of complete Oracle Forms PL/SQL code in a single file:
+Extracting of complete Oracle Forms PL/SQL code in a single file: 
 
 
 
@@ -15,7 +15,7 @@ Adapting the full qualified files in:
 - line 77
 - line 78 .
 
-A output demo from .. is viewing in https://github.com/Fxztam/FormsJDAPIwJython/blob/master/chk_fwatchself.sql
+A output demo from https://github.com/Fxztam/FormsFileWatcher/blob/master/chk_fwatchself.fmb is viewing in https://github.com/Fxztam/FormsJDAPIwJython/blob/master/chk_fwatchself.sql .
 
 ### Status
-Proof of Concept
+Proof of Concept - first study .
