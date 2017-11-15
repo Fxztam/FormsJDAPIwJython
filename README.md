@@ -15,7 +15,7 @@ Adapting the full qualified files in:
 - line 77
 - line 78 .
 
-A output demo from .. is viewing in 
+A output demo from .. is viewing in https://github.com/Fxztam/FormsJDAPIwJython/blob/master/chk_fwatchself.sql
 
 ### Status
 Proof of Concept
