@@ -3,7 +3,7 @@
 ### FormsExtractCode
 Extracting of complete Oracle Forms PL/SQL code in a single file https://github.com/Fxztam/FormsJDAPIwJython/blob/master/FormsExtractCode.py 
 
-This PoC runs with Jython 2.7.0 from with Jython 2.7.0 from http://www.jython.org/downloads.html .
+This PoC runs with Jython 2.7.0 from http://www.jython.org/downloads.html .
 
 ### Motivation
 The one file of the complete Oracle Forms PL/SQL code can be a good input for analyzing this code,
