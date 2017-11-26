@@ -9,7 +9,7 @@ This PoC runs with Jython 2.7.0 from http://www.jython.org/downloads.html :
 
 ### Motivation
 The one file of the complete Oracle Forms PL/SQL code can be a good input for analyzing this code,
-Jython is a good basic for Low Code handlings of JDAPI 
+Jython is a good basic for Low Code handlings of Oracle Forms JDAPI. 
 
 ### Running
 Adapting the full qualified files in:
@@ -20,4 +20,4 @@ Adapting the full qualified files in:
 A output demo from https://github.com/Fxztam/FormsFileWatcher/blob/master/chk_fwatchself.fmb is viewing in https://github.com/Fxztam/FormsJDAPIwJython/blob/master/chk_fwatchself.sql .
 
 ### Status
-Proof of Concept - first study .
+Proof of Concept - first study
