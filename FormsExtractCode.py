@@ -5,11 +5,11 @@ Created on 04.10.2017
 '''
 
 from oracle.forms.jdapi import FormModule, JdapiException, Jdapi;
-from pyparsing          import Word, alphas; 
+#from pyparsing          import Word, alphas; 
  
 __author__  = "Friedhold Matz"
-__date__    = "15.11.2017"
-__version__ = "00.02.01.20171115"
+__date__    = "01.03.2018"
+__version__ = "00.03.02.20180301"
 
 def fprint(txt):
     #file.write(txt+ "\n");
@@ -36,7 +36,7 @@ def showBlockLevelTriggers():
         block = blocks.next();
         blk_trgs = block.getTriggers();
         while (blk_trgs.hasNext()):
-            block_trg = block.next();   
+            block_trg = blk_trgs.next();   
             fprint(block_trg.getName());    
             fprintcode(block_trg.getTriggerText());
     fprintcode("--- [EO showBlockLevelTriggers] ---\n");   
@@ -62,7 +62,7 @@ def showProgrammUnits():
     while (progUnits.hasNext()):
         progUnit = progUnits.next();
         fprint(progUnit.getName());
-        fprintcode(progUnit.getProgramUnitText());
+        fprintcode(progUnit.getProgramUnitText().encode('utf-8'));
     fprintcode("--- [EO showProgrammUnits] ---\n");    
     
         
@@ -70,12 +70,12 @@ if __name__ == '__main__':
     
     print("--- BO Main  ---");
     
-    file = open("C:\\Work\\chk_fwatchself.sql", "w");   
+    file = open("C:\\Work\\chk_cbox3.sql", "w");   
     FormsObj = FormModule;
         
     try:
-        fmd = FormModule.openModule("C:\\Work\\chk_fwatchself.fmb");
-        FormsVersion = FormModule.getModulesProductVersion("C:\\Work\\chk_fwatchself.fmb");   
+        fmd = FormModule.openModule("C:\\Work\\chk_cbox3.fmb");
+        FormsVersion = FormModule.getModulesProductVersion("C:\\Work\\chk_cbox3.fmb");   
         FormName     = fmd.getName();   
         fprint("--- Module reading OK. ---");        
     except JdapiException, ex:
@@ -117,4 +117,5 @@ if __name__ == '__main__':
     print "--------------------------------------------"
     
     file.close();
-    
+
+	
